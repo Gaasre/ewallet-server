@@ -30,7 +30,7 @@ api.use(require('./routes'));
 app.use('/signup', require('./routes/signup'));
 app.use('/signin', require('./routes/signin'));
 
-app.listen(config.server.port, function () {
+app.listen(process.env.PORT || config.server.port, function () {
     console.log(`Listening on 0.0.0.0:${config.server.port} ...`)
 });
 
