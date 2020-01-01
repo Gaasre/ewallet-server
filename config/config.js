@@ -3,10 +3,10 @@ const config = {
         port: 3000
     }, 
     mysql: {
-        database: 'ewallet',
-        username: 'root',
-        password: 'test',
-        host: 'localhost',
+        database: '4r0rxJUQqi',
+        username: '4r0rxJUQqi',
+        password: '3IjOmV4yIk',
+        host: 'remotemysql.com',
     },
     keys: {
         jwt: 'hUBcgNunAJ4gXhgGImCo1b8RPzNJqrYf'
