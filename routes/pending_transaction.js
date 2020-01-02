@@ -26,7 +26,6 @@ router.get('/:id', function (req, res) {
     sequelize.sync().then(function () {
         return Pending.findOne({
             where: {
-                sellerid: req.user.id,
                 id: id
             }
         });
@@ -34,12 +33,12 @@ router.get('/:id', function (req, res) {
         if (_pending) {
             res.status(200).json({
                 response: 'success',
-                data: ''
+                data: _pending
             });
         } else {
             res.status(200).json({
                 response: 'fail',
-                data: ''
+                data: 'Can\'t find data'
             });
         }
     });
